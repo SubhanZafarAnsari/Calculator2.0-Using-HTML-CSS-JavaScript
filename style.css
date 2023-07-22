@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the body height to occupy the full viewport height */
+  background: linear-gradient(to right bottom, #0a0a0a, #3a4452);
+}
+
+.container {
+  background: transparent;
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  max-width: 400px;
+  width: 90%;
+}
+
+input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: right;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 40px;
+  outline: none;
+  color: white;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.equalBTN {
+  background-color: #fb7c14;
+}
+
+.operatorBTN {
+  color: #6dee0a;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Add media queries for responsive design */
+
+@media (max-width: 600px) {
+  /* Adjust button width and margin for smaller screens */
+  button {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+  }
+
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
